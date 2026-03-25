@@ -1,0 +1,44 @@
+{
+  "name": "langchain-lcel-examples-typescript",
+  "version": "1.0.0",
+  "description": "LangChain LCEL examples with TypeScript, MVC architecture, MongoDB, JWT, and logging",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-esm src/app.ts",
+    "start": "node dist/app.js",
+    "dev:1": "ts-node-esm src/examples/01-simple-chain/index.ts",
+    "dev:2": "ts-node-esm src/examples/02-stream-responses/index.ts",
+    "dev:3": "ts-node-esm src/examples/03-structured-output/index.ts",
+    "dev:4": "ts-node-esm src/examples/04-lcel-vs-fetch/index.ts"
+  },
+  "keywords": [
+    "langchain",
+    "lcel",
+    "typescript",
+    "mongodb",
+    "jwt",
+    "mvc"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/core": "^0.1.0",
+    "@langchain/openai": "^0.0.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.1.2",
+    "mongoose": "^8.0.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
