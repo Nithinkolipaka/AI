@@ -31,7 +31,7 @@ export const simpleChainRequestSchema = z.object({
   model: z
     .string()
     .optional()
-    .default("gpt-4-turbo-preview")
+    .default("GPT-3.5 Turbo")
     .describe("LLM model to use"),
 });
 
