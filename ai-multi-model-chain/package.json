@@ -1,0 +1,47 @@
+{
+  "name": "ai-multi-model-chain",
+  "version": "1.0.0",
+  "description": "Multi-LLM provider chain with LCEL, streaming, and structured output parsing",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/server.ts",
+    "start": "node dist/server.js",
+    "cli": "ts-node src/cli.ts",
+    "lint": "eslint src --ext .ts",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "llm",
+    "langchain",
+    "openai",
+    "ollama",
+    "gemini",
+    "claude",
+    "streaming",
+    "structured-output"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/core": "^0.1.50",
+    "@langchain/community": "^0.0.40",
+    "@langchain/openai": "^0.0.20",
+    "anthropic": "^0.20.0",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
